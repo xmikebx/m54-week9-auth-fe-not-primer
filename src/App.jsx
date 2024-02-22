@@ -1,12 +1,19 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+
+import LogOrSign from "./components/logOrSign/LogOrSign";
 import "./App.css";
 
 function App() {
+  const [user, setUser] = useState({});
   return (
     <>
-      <div>Hello World</div>
+      <div className="wrapper">
+        {!user.username ? (
+          <LogOrSign setUser={setUser} />
+        ) : (
+          <h2>You are logged in, {user.username}</h2>
+        )}
+      </div>
     </>
   );
 }
