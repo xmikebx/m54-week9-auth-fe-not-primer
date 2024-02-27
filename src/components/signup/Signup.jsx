@@ -13,15 +13,17 @@ const Signup = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    let form = document.getElementById("signupForm");
 
     console.log("hello from handle submit");
-    await signup(email, username, password);
+    await signup(username, email, password);
+    form.reset();
   };
 
   return (
     <div>
       <h3>Signup</h3>
-      <form onSubmit={handleSubmit}>
+      <form id="signupForm" onSubmit={handleSubmit}>
         <input
           placeholder="username"
           onChange={(e) => changeHandler(e, setUsername, username)}
