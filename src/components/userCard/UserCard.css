@@ -1,0 +1,46 @@
+.user-card-wrapper {
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: center;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.smll {
+  font-size: 14px;
+}
+
+.lrg {
+  width: 100%;
+  font-size: 18px;
+}
+
+.notFullWidth {
+  width: 90%;
+}
+
+.change-wrapper {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 0px;
+  border-top: 1px solid black;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  justify-content: space-evenly;
+
+  margin: 20px;
+}

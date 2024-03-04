@@ -1,0 +1,19 @@
+.usercontainer-wrapper {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid orange; */
+}
+
+.card-container {
+  height: 80%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  /* border: 1px solid green; */
+  overflow-y: scroll;
+}
