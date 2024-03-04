@@ -1,0 +1,22 @@
+.header-wrapper {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-inner-container {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+
+.header-title {
+  text-align: center;
+}
